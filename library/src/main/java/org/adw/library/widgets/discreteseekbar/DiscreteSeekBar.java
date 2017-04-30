@@ -674,7 +674,7 @@ public class DiscreteSeekBar extends View {
         }
     }
 
-    private String convertValueToMessage(int value) {
+    protected String convertValueToMessage(int value) {
         String format = mIndicatorFormatter != null ? mIndicatorFormatter : DEFAULT_FORMATTER;
         //We're trying to re-use the Formatter here to avoid too much memory allocations
         //But I'm not completey sure if it's doing anything good... :(
